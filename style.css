@@ -1,0 +1,32 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.navbar {
+    margin: 10px 0;
+    display: flex;
+    justify-content: flex-end;
+}
+
+button {
+    margin: 10px;
+    display: inline;
+    position: relative;
+}
+
+.navbar a {
+    text-decoration: none;
+    margin: 15px; /*It did not accept the top and bototom */ 
+    color: black;
+}
+
+.dropdowncontent {
+    display: none;
+    position: absolute;
+}
+
+img {
+    width: 100%;
+}
+
