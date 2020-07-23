@@ -3,22 +3,42 @@
     padding: 0px;
 }
 
+header {
+    display: flex;
+    justify-content: space-between;
+}
+
 .navbar {
     margin: 10px 0;
     display: flex;
     justify-content: flex-end;
+    /* position: fixed; */
+}
+
+.logo img {
+    margin-left: 15px;
 }
 
 button {
     margin: 10px;
     display: inline;
     position: relative;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+button:hover {
+    background-color: tomato;
 }
 
 .navbar a {
     text-decoration: none;
     margin: 15px; /*It did not accept the top and bototom */ 
-    color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 110%;
 }
 
 .dropdowncontent {
@@ -26,7 +46,58 @@ button {
     position: absolute;
 }
 
-img {
+.mainimage img {
     width: 100%;
 }
 
+h1 {
+    text-align: center;
+    font-size: 200%;
+    margin: 40px 0;
+}
+
+.Discriptioncontainer {
+    margin-top: 40px ;
+    
+}
+
+.Discription {
+    margin: 30px 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Discription img {
+    border-radius: 20px;
+    width: 45%;
+}
+
+.Distextarea {
+    margin: 15px;
+    width: 45%;    
+}
+
+.Distextarea h2 {
+    font-size: 175%;
+}
+
+.Discription p {
+    margin-top: 15px;
+}
+
+.Discription button {
+    margin-top: 25px;
+    padding: 10px;
+}
+
+.Discription button a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: large;
+    color: white;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
