@@ -12,14 +12,13 @@ header {
     margin: 10px 0;
     display: flex;
     justify-content: flex-end;
-    /* position: fixed; */
 }
 
 .logo img {
     margin-left: 15px;
 }
 
-button {
+.navbar button {
     margin: 10px;
     display: inline;
     position: relative;
@@ -29,11 +28,11 @@ button {
     padding: 5px;
 }
 
-button:hover {
+.navbar button:hover {
     background-color: tomato;
 }
 
-.navbar a {
+.navbar button a {
     text-decoration: none;
     margin: 15px; /*It did not accept the top and bototom */ 
     color: white;
@@ -52,7 +51,8 @@ button:hover {
 
 h1 {
     text-align: center;
-    font-size: 200%;
+    font-family: 'Red Rose', cursive;
+    font-size: 35px;
     margin: 40px 0;
 }
 
@@ -79,25 +79,175 @@ h1 {
 
 .Distextarea h2 {
     font-size: 175%;
+    font-family: 'Libre Franklin', sans-serif;
 }
 
 .Discription p {
     margin-top: 15px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 18px;
+    text-align: justify;
 }
 
 .Discription button {
     margin-top: 25px;
+    background-color: green;
+    border: none;
+    border-radius: 5px;
     padding: 10px;
+}
+
+.Discription button:hover {
+    background-color: tomato;
 }
 
 .Discription button a {
     text-decoration: none;
-    font-weight: bold;
-    font-size: large;
+    font-size: 20px;
     color: white;
 }
 
 footer {
     display: flex;
     justify-content: center;
+}
+
+/* .fab fa-facebook {
+    font-size: 24px;
+} */
+
+/* ************************************************************************************************************************************* */
+
+/* Responsive Design */
+
+@media only screen and (max-width: 800px) {
+    h1 {
+        font-size: 30px;
+        margin: 30px 0;
+    }
+
+    .navbar button a {
+        margin: 8px;
+    }
+
+    .Discription {
+        margin: 20px 20px;
+        flex-wrap: wrap;
+    }
+
+    .Discription img {
+        border-radius: 15px;
+        width: 95%; 
+    }
+
+    .Distextarea {
+        width: 95%;    
+    }
+
+    .Distextarea h2 {
+        font-size: 150%;
+    }
+
+    .Discription p {
+        font-size: 17px;
+    }
+
+    .Discription button {
+        margin-top: 20px;
+        padding: 8px;
+    }
+}
+/* *************************************************************************************************************************************** */
+
+/* Responsive for Mobile 500px */
+@media only screen and (max-width: 500px) {
+    header {
+        flex-wrap: wrap;
+    }
+
+    .logo img {
+        width: 70px;
+    }
+
+    .navbar div {
+        display: flex;
+        justify-content: center;
+    }
+
+    .mainimage img {
+        width: 490px;
+        margin: 0 5px;
+    }
+
+    h1 {
+        font-size: 22px;
+        margin: 15px 0;
+    }
+
+    .Discriptioncontainer {
+        margin-top: 20px ;
+        
+    }
+
+    .Distextarea h2 {
+        font-size: 120%;
+    }
+
+    .Discription p {
+        font-size: 15px;
+
+    }
+
+    .navbar button {
+        margin: 5px;
+        border-radius: 3px;
+        padding: 3px;
+    }
+
+    .navbar button a {
+        margin: 5px;
+        font-weight: lighter;
+        font-size: 85%;
+    }
+
+    .Discription button a {
+        font-weight: lighter;
+        font-size: small;
+        color: white;
+    }
+}
+/* *************************************************************************************************************************************** */
+/* About Us page CSS */
+
+.teamcontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.teammembers {
+    border: tomato 1px solid;
+    border-radius: 15px;
+    background-color: rgb(255, 252, 227);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 45%;
+    margin: 20px;
+    padding: 10px;
+}
+
+.teammembers img {
+    border-radius: 50%;
+    width: 40%;
+}
+
+.teammembers h2 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.teammembers div p {
+    display: inline;
+    text-align: justify;
 }
