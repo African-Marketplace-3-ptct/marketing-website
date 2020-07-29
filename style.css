@@ -40,9 +40,42 @@ header {
     font-size: 110%;
 }
 
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* .dropdownbtn {
+    position: relative;
+    display: inline-block;   
+} */
+
 .dropdowncontent {
     display: none;
     position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    border-radius: 7px;
+    z-index: 1.5;
+}
+
+.dropdowncontent a {
+    color: green;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.dropdown:hover .dropdowncontent {
+    display: block;
+    background-color: rgb(200, 253, 222);
+   
+}
+
+.dropdowncontent a:hover {
+    background-color: rgb(127, 202, 177);
+    border-radius: 7px;
 }
 
 .mainimage img {
@@ -82,14 +115,14 @@ h1 {
     font-family: 'Libre Franklin', sans-serif;
 }
 
-.Discription p {
+.Distextarea p {
     margin-top: 15px;
     font-family: 'Libre Franklin', sans-serif;
     font-size: 18px;
     text-align: justify;
 }
 
-.Discription button {
+.Distextarea button {
     margin-top: 25px;
     background-color: green;
     border: none;
@@ -97,11 +130,11 @@ h1 {
     padding: 10px;
 }
 
-.Discription button:hover {
+.Distextarea button:hover {
     background-color: tomato;
 }
 
-.Discription button a {
+.Distextarea button a {
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -148,21 +181,75 @@ footer {
         font-size: 150%;
     }
 
-    .Discription p {
+    .Distextarea p {
         font-size: 17px;
     }
 
-    .Discription button {
+    .Distextarea button {
         margin-top: 20px;
         padding: 8px;
     }
 }
 /* *************************************************************************************************************************************** */
+/* Responsive for Mobile 710px */
+@media only screen and (max-width: 710px) {
 
+    .navbar div {
+        flex-wrap: nowrap;
+    }
+
+    .navbar button {
+        margin: 7px;
+    }
+
+    .navbar button a {
+        font-size: 90%;
+    }
+}
+
+/* *************************************************************************************************************************************** */
+/* Responsive for Mobile 630px */
+@media only screen and (max-width: 630px) {
+    .navbar div {
+        flex-wrap: nowrap;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+}
+
+/* *************************************************************************************************************************************** */
+/* Responsive for Mobile 580px */
+@media only screen and (max-width: 580px) {
+    .navbar div {
+        flex-wrap: nowrap;
+    }
+
+    .navbar button {
+        margin: 4px;
+        padding: 3px;
+    }
+
+    .navbar button a {
+        margin: 5px;
+    }
+
+    .Distextarea button {
+        margin-top: 20px;
+        padding: 8px;
+    }
+
+    .Distextarea button a {
+        font-size: 17px;
+    }
+}
+
+/* *************************************************************************************************************************************** */
 /* Responsive for Mobile 500px */
 @media only screen and (max-width: 500px) {
     header {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
     }
 
     .logo img {
@@ -172,6 +259,10 @@ footer {
     .navbar div {
         display: flex;
         justify-content: center;
+    }
+/* Still it's not responsive for 500px */
+    .dropdowncontent {
+        display: none;
     }
 
     .mainimage img {
@@ -210,10 +301,15 @@ footer {
         font-size: 85%;
     }
 
-    .Discription button a {
+    .Distextarea button {
+        padding: 6px;
+    }
+
+    .Distextarea button a {
         font-weight: lighter;
-        font-size: small;
+        font-size: 15px;
         color: white;
+        
     }
 }
 /* *************************************************************************************************************************************** */
