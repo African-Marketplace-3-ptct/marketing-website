@@ -370,3 +370,81 @@ footer {
         padding: 8px;
     }   
 }
+
+/* **************************************************************************************************************************************** */
+
+/* Contact Us CSS part */
+
+.contacttext {
+    margin-bottom: 20px;
+}
+
+.contacttext p {
+    font-family: 'Red Rose', cursive;
+    display: flex;
+    justify-content: center;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    /*background-color: rgb(250, 219, 211);
+    */ 
+}
+
+.container::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    background-image: url("MainImage.jpg");
+    background-size: cover;
+    opacity: 0.7;
+}
+
+input {
+    height: 50px;
+    width: 350px;
+    box-sizing: border-box;
+    /* align-content: center; */
+    display: block;
+    /*align-items: center;*/
+    margin: 20px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+}
+
+.submit {
+    width: 300px;
+    height: 50px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: honeydew;
+    background-color: green;
+    border-radius: 10px;
+    margin: 20px 40px;
+    font-size: 20px;
+    border: none;
+    position: relative;
+}
+
+footer {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.socialmedia {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 20px;
+}
+
+.socialmedia p {
+    display: inline;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
